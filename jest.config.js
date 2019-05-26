@@ -9,5 +9,6 @@ module.exports = {
     '!<rootDir>/src/**/*.spec.ts',
     '!<rootDir>/src/**/__*__/*',
   ],
-  moduleFileExtensions: [ 'ts', 'tsx', 'js', 'jsx', 'json' ]
+  moduleFileExtensions: [ 'ts', 'tsx', 'js', 'jsx', 'json' ],
+  coverageReporters: [ "lcov", "text" ]
 }
