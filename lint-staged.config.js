@@ -1,13 +1,12 @@
 module.exports = {
-    linters: {
-        '**/*.+(js|ts|tsx|jsx)': [
-            'eslint --fix',
-            'jest --findRelatedTests',
-            'git add'
-        ],
-        '**/*.+(js|md|ts|css|sass|yml|yaml|scss|json|tsx|jsx|html)': [
-            'prettier --write',
-            'git add'
-        ]
-    }
+    '*.{js,ts,tsx,jsx}': [
+        'eslint --fix',
+        'prettier --write',
+        'jest --findRelatedTests',
+        'git add'
+    ],
+    '*.{md,css,sass,yml,yaml,scss,json,html}': [
+        'prettier --write',
+        'git add'
+    ]
 }
