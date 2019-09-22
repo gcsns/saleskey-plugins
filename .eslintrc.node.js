@@ -29,6 +29,7 @@ module.exports = {
     },
     rules: {
         'no-underscore-dangle': 'off',
-        'import/prefer-default-export': 'off'
+        'import/prefer-default-export': 'off',
+        'class-methods-use-this': 'warn'
     }
 }

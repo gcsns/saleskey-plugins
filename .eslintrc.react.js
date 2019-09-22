@@ -35,6 +35,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'import/prefer-default-export': 'off',
         'react/jsx-one-expression-per-line': 'off',
-        'react/jsx-indent': 'off'
+        'react/jsx-indent': 'off',
+        'class-methods-use-this': 'warn'
     }
 }
