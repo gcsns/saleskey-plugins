@@ -10,5 +10,6 @@ module.exports = {
     '!<rootDir>/src/**/__*__/*',
   ],
   moduleFileExtensions: [ 'ts', 'tsx', 'js', 'jsx', 'json' ],
-  coverageReporters: [ "lcov", "text" ]
+  setupFiles: [ __dirname + '/jest.setup.js' ],
+  coverageReporters: [ 'lcov', 'text' ],
 }
