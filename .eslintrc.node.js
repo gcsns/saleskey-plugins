@@ -8,7 +8,8 @@ module.exports = {
     plugins: [
         '@typescript-eslint',
         'import',
-        'jest'
+        'jest',
+        'sort-keys-fix'
     ],
     extends: [
         'airbnb-typescript/base',
@@ -30,6 +31,7 @@ module.exports = {
     rules: {
         'no-underscore-dangle': 'off',
         'import/prefer-default-export': 'off',
-        'class-methods-use-this': 'warn'
+        'class-methods-use-this': 'warn',
+        'sort-keys-fix/sort-keys-fix': 'error'
     }
 }
