@@ -36,7 +36,6 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'react/jsx-one-expression-per-line': 'off',
         'react/jsx-indent': 'off',
-        'react/no-did-update-set-state': 'off',
-        'click-events-have-key-events': 'off'
+        'react/no-did-update-set-state': 'off'
     }
 }
