@@ -10,8 +10,5 @@ module.exports = {
   ],
   moduleFileExtensions: [ 'ts', 'tsx', 'js', 'jsx', 'json' ],
   testEnvironment: 'node',
-  snapshotSerializers: [
-    "enzyme-to-json/serializer"
-  ],
   coverageReporters: [ "lcov", "text" ]
 }
