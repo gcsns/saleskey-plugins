@@ -36,6 +36,8 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'react/jsx-one-expression-per-line': 'off',
         'react/jsx-indent': 'off',
+        'class-methods-use-this': 'warn',
+        'sort-keys-fix/sort-keys-fix': 'error',
         'react/no-did-update-set-state': 'off'
     }
 }
