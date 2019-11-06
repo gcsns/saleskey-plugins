@@ -8,7 +8,9 @@ module.exports = {
     plugins: [
         '@typescript-eslint',
         'import',
-        'jest'
+        'jest',
+        'sort-keys-fix',
+        'sort-class-members'
     ],
     extends: [
         'airbnb-typescript/base',
@@ -29,6 +31,21 @@ module.exports = {
     },
     rules: {
         'no-underscore-dangle': 'off',
-        'import/prefer-default-export': 'off'
+        'import/prefer-default-export': 'off',
+        'class-methods-use-this': 'warn',
+        'sort-keys-fix/sort-keys-fix': 'error',
+        'sort-class-members/sort-class-members': [ 'error', {
+            order: [
+              '[static-properties]',
+              '[static-methods]',
+              '[properties]',
+              '[conventional-private-properties]',
+              'constructor',
+              '[conventional-private-methods]',
+              '[methods]'
+            ],
+            accessorPairPositioning: 'getThenSet',
+            sort: 'alphabetical'
+        }]
     }
 }

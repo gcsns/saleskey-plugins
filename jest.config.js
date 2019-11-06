@@ -10,5 +10,6 @@ module.exports = {
   ],
   moduleFileExtensions: [ 'ts', 'tsx', 'js', 'jsx', 'json' ],
   testEnvironment: 'node',
-  coverageReporters: [ "lcov", "text" ]
+  setupFiles: [ __dirname + '/jest.setup.js' ],
+  coverageReporters: [ 'lcov', 'text' ],
 }

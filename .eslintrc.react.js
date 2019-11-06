@@ -12,7 +12,8 @@ module.exports = {
     plugins: [
         '@typescript-eslint',
         'import',
-        'jest'
+        'jest',
+        'sort-keys-fix'
     ],
     extends: [
         'airbnb-typescript',
