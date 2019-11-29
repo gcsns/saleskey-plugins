@@ -10,7 +10,8 @@ module.exports = {
         'import',
         'jest',
         'sort-keys-fix',
-        'sort-class-members'
+        'sort-class-members',
+        'unused-imports'
     ],
     extends: [
         'airbnb-typescript/base',
@@ -46,6 +47,9 @@ module.exports = {
             ],
             accessorPairPositioning: 'getThenSet',
             sort: 'alphabetical'
-        }]
+        }],
+        '@typescript-eslint/no-unused-vars': 'off',
+        'unused-imports/no-unused-imports-ts': 2,
+        'unused-imports/no-unused-vars-ts': 2
     }
 }
