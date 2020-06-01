@@ -11,13 +11,15 @@ module.exports = {
         'jest',
         'sort-keys-fix',
         'sort-class-members',
-        'unused-imports'
+        'unused-imports',
+        'promise'
     ],
     extends: [
         'airbnb-typescript/base',
         'prettier',
         'prettier/@typescript-eslint',
-        'plugin:jest/recommended'
+        'plugin:jest/recommended',
+        'plugin:promise/recommended'
     ],
     env: {
         browser: false,
