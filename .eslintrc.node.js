@@ -12,14 +12,16 @@ module.exports = {
         'sort-keys-fix',
         'sort-class-members',
         'unused-imports',
-        'promise'
+        'promise',
+        // 'security'
     ],
     extends: [
         'airbnb-typescript/base',
         'prettier',
         'prettier/@typescript-eslint',
         'plugin:jest/recommended',
-        'plugin:promise/recommended'
+        'plugin:promise/recommended',
+        // 'plugin:security/recommended'
     ],
     env: {
         browser: false,
