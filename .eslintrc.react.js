@@ -39,6 +39,7 @@ module.exports = {
         'react/jsx-indent': 'off',
         'class-methods-use-this': 'warn',
         'sort-keys-fix/sort-keys-fix': 'error',
-        'react/no-did-update-set-state': 'off'
+        'react/no-did-update-set-state': 'off',
+        'react/no-find-dom-node':'off'
     }
 }
