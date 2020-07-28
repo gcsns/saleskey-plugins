@@ -12,7 +12,8 @@ module.exports = {
         'sort-keys-fix',
         'sort-class-members',
         'unused-imports',
-        'promise'
+        'promise',
+        // 'security'
     ],
     extends: [
         'plugin:@typescript-eslint/recommended',
@@ -21,6 +22,7 @@ module.exports = {
         'plugin:promise/recommended',
         'prettier',
         'prettier/@typescript-eslint'
+        // 'plugin:security/recommended'
     ],
     env: {
         browser: false,
