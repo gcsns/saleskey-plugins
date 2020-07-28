@@ -15,11 +15,12 @@ module.exports = {
         'promise'
     ],
     extends: [
+        'plugin:@typescript-eslint/recommended',
         'airbnb-typescript/base',
-        'prettier',
-        'prettier/@typescript-eslint',
         'plugin:jest/recommended',
-        'plugin:promise/recommended'
+        'plugin:promise/recommended',
+        'prettier',
+        'prettier/@typescript-eslint'
     ],
     env: {
         browser: false,
@@ -52,7 +53,6 @@ module.exports = {
         }],
         '@typescript-eslint/no-unused-vars': 'off',
         'unused-imports/no-unused-imports-ts': 2,
-        'unused-imports/no-unused-vars-ts': 2,
-        'no-dupe-class-members': 'off'
+        'unused-imports/no-unused-vars-ts': 2
     }
 }
