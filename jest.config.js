@@ -1,7 +1,6 @@
 module.exports = {
   rootDir: '.',
   preset: 'ts-jest',
-  testEnvironment: 'node',
   testMatch: [ '<rootDir>/tests/**/*.spec.ts' ],
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
@@ -10,6 +9,7 @@ module.exports = {
     '!<rootDir>/src/**/__*__/*',
   ],
   moduleFileExtensions: [ 'ts', 'tsx', 'js', 'jsx', 'json' ],
+  testEnvironment: 'node',
   setupFiles: [ __dirname + '/jest.setup.js' ],
   coverageReporters: [ 'lcov', 'text' ],
 }
