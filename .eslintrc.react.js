@@ -18,7 +18,6 @@ module.exports = {
     extends: [
         'airbnb-typescript',
         'prettier',
-        'prettier/@typescript-eslint',
         'plugin:jest/recommended'
     ],
     env: {
@@ -40,6 +39,18 @@ module.exports = {
         'class-methods-use-this': 'warn',
         'sort-keys-fix/sort-keys-fix': 'error',
         'react/no-did-update-set-state': 'off',
-        'react/no-find-dom-node':'off'
+        'react/no-find-dom-node':'off',
+        "import/extensions": [
+            "off",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ],
+         'import/no-extraneous-dependencies': 'off'
     }
+    
 }
