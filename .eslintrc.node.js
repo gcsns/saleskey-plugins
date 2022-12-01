@@ -52,7 +52,7 @@ module.exports = {
               '[methods]'
             ],
             accessorPairPositioning: 'getThenSet',
-            sort: 'alphabetical'
+            // sort: 'alphabetical'
         }],
         '@typescript-eslint/no-unused-vars': 'off',
         'unused-imports/no-unused-imports-ts': 2,
