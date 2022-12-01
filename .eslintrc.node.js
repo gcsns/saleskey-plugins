@@ -9,6 +9,7 @@ module.exports = {
     plugins: [
         '@typescript-eslint',
         'import',
+        'jest',
         'sort-keys-fix',
         'sort-class-members',
         'unused-imports',
@@ -19,6 +20,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'airbnb-base',
         'airbnb-typescript/base',
+        'plugin:jest/recommended',
         'plugin:promise/recommended',
         'prettier'
         // 'plugin:security/recommended'
@@ -27,7 +29,7 @@ module.exports = {
         browser: false,
         node: true,
         es6: true,
-        jest: false
+        jest: true,
     },
     settings: {
         'import/resolver': {
