@@ -5,7 +5,7 @@ module.exports = {
         sourceType: 'module',
         project: './tsconfig.json'
     },
-    ignorePatterns: ["**/*.config.js",".eslintrc.js", "lib"],
+    ignorePatterns: ["**/*.config.js",".eslintrc.js", "lib", "**/__mocks__/*.js"],
     plugins: [
         '@typescript-eslint',
         'import',
