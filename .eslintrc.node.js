@@ -55,6 +55,11 @@ module.exports = {
             // sort: 'alphabetical'
         }],
         '@typescript-eslint/no-unused-vars': 'off',
+        'no-restricted-syntax': ['error',
+            'ForInStatement',
+            'LabeledStatement',
+            'WithStatement',
+        ],
         'unused-imports/no-unused-imports-ts': 2,
         'unused-imports/no-unused-vars-ts': 2
     }
