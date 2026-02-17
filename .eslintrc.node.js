@@ -60,7 +60,7 @@ module.exports = {
             'LabeledStatement',
             'WithStatement',
         ],
-        'unused-imports/no-unused-imports-ts': 2,
-        'unused-imports/no-unused-vars-ts': 2
+        'unused-imports/no-unused-imports': 2,
+        'unused-imports/no-unused-vars': 2
     }
 }
