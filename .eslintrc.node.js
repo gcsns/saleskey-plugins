@@ -55,6 +55,10 @@ module.exports = {
             // sort: 'alphabetical'
         }],
         '@typescript-eslint/no-unused-vars': 'off',
+        // SonarQube mandates `for...of` over `.forEach()` and for-of routinely
+        // needs `continue` for skip-an-iteration logic. airbnb-base bans `continue`
+        // by default — turn it off so the Sonar-preferred form lints cleanly.
+        'no-continue': 'off',
         'no-restricted-syntax': ['error',
             'ForInStatement',
             'LabeledStatement',
