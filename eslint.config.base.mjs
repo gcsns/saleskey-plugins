@@ -83,6 +83,16 @@ export function houseConfig({
                 ],
                 // numbers in template literals are fine (e.g. logging a port)
                 '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
+                // reject a bare `export {}` (Sonar typescript:S7787) so the linter stays in sync with
+                // Sonar — an empty module marker can't slip through. Export real members instead.
+                'no-restricted-syntax': [
+                    'error',
+                    {
+                        selector: 'ExportNamedDeclaration[declaration=null][source=null][specifiers.length=0]',
+                        message:
+                            'Empty `export {}` is not allowed (Sonar typescript:S7787). Export real members or a real declaration instead of an empty module marker.',
+                    },
+                ],
             },
         },
         {
