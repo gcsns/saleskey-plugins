@@ -100,6 +100,15 @@ export function houseConfig({
             files: testFiles,
             extends: [jest.configs['flat/recommended']],
         },
+        {
+            // Dedicated *.type.ts files hold plain shape aliases — prefer `type` there (overriding
+            // stylisticTypeChecked's interface default). Interfaces stay the default elsewhere, so
+            // declaration-merging / module augmentation (which REQUIRES interface) is unaffected.
+            files: ['**/*.type.ts'],
+            rules: {
+                '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+            },
+        },
         // must be last: turn off stylistic rules that Prettier owns
         prettier,
     );
